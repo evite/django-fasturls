@@ -78,9 +78,11 @@ This changes because of the tree structure:
 Instructions
 ------------
 
-In all of your urls.py files replace `from django.conf.urls import url` with `from fasturl import FastUrl as url`
+In all of your urls.py files replace :code:`from django.conf.urls import url` with :code:`from fasturl import FastUrl as url`
 
 In the master urls.py of your project render the `urlpatterns` after building the `urlpatterns` list.
+
+.. code:: python
 
     from fasturls import render_fast_urls
     urlpatterns = render_fast_urls(urlpatterns, debug=False)
