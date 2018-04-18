@@ -50,7 +50,7 @@ Can be expressed more optimally in a tree structure as:
 Caveats
 =======
 
-Compatible with Django 1.9.  Django 2.0 did some refactoring of the url internals that will require FastURL to be
+Compatible with Django 1.9 - 1.11.  Django 2.0 did some refactoring of the url internals that will require FastURL to be
 updated
 
 URL resolution order can change from the list order causing a different view to be returned in rare cases if you have
